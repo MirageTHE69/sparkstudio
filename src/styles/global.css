@@ -1,0 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.my-custom-font {
+    font-family: 'elza-trail', sans;
+    /* You can specify other font properties here, like font-size, font-weight, etc. */
+  }
