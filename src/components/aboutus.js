@@ -2,7 +2,7 @@ import * as React from "react"
 
 function AboutUs() {
   return (
-    <div className=" bg-black  text-white">
+    <div className="   text-white">
       <div className="w-full bg-black p-10">
         <h1 className="w-full  ml-11 text-4xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
           About us

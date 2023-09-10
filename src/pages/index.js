@@ -15,18 +15,17 @@ import AboutUs from "../components/aboutus"
 import WebServiceSection from "../components/services/webservices"
 import GetInTouch from "../components/getInTouch"
 
-
 const IndexPage = () => (
-  <>
-    <Navbar /> {/* Set min-h-screen to h-screen */}
-    <div className="h-screen bg-black ">
+  <div className="min-h-min  bg-black">
+    <Navbar />
+    <div className="  ">
       <div
         className="bg-cover bg-black p-10  pb-20  pt-32 text-white flex flex-col justify-center space-y-10 px-10"
         style={{ backgroundImage: `url(${Star})` }}
       >
         <div className="space-y-4">
           <h1 className="w-[50%] text-7xl capitalize">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#A168FF] my-custom-font">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#A168FF] ">
               Charting the Future of Development and Design
             </span>
           </h1>
@@ -39,7 +38,7 @@ const IndexPage = () => (
           Book
         </button>
       </div>
-      <div className="h-[50%] relative bg-black">
+      <div className=" h-full  mt-24 relative   bg-transparent ">
         <div className="absolute inset-0 flex items-center justify-center ">
           <InfoCard />
         </div>
@@ -48,16 +47,19 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <div >
+      <div>
         <AboutUs />
-
-        <WebServiceSection />
-
-        <GetInTouch/>
       </div>
-     
+      <div>
+        <WebServiceSection />
+      </div>
+
+      <div>
+        <GetInTouch />
+      </div>
     </div>
-  </>
+    </div>
+ 
 )
 export const Head = () => <Seo title="Home" />
 
