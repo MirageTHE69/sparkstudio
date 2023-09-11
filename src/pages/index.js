@@ -14,15 +14,14 @@ import InfoCard2 from "../components/infocard2"
 import AboutUs from "../components/aboutus"
 import WebServiceSection from "../components/services/webservices"
 import GetInTouch from "../components/getInTouch"
+import Footer from "../components/footer"
+import FooterBackgroundImage from "../images/footerBackground.png"
 
 const IndexPage = () => (
-  <div className="min-h-min  bg-black">
+  <div className="min-h-min  bg-black my-custom-background">
     <Navbar />
     <div className="  ">
-      <div
-        className="bg-cover bg-black p-10  pb-20  pt-32 text-white flex flex-col justify-center space-y-10 px-10"
-        style={{ backgroundImage: `url(${Star})` }}
-      >
+      <div className="bg-cover  p-10  pb-20  pt-32 text-white flex flex-col justify-center space-y-10 px-10 ">
         <div className="space-y-4">
           <h1 className="w-[50%] text-7xl capitalize">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#A168FF] ">
@@ -47,7 +46,7 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <div>
+      <div className="  mt-64">
         <AboutUs />
       </div>
       <div>
@@ -58,8 +57,18 @@ const IndexPage = () => (
         <GetInTouch />
       </div>
     </div>
+    <div
+      className=" h-full w-full  "
+      style={{
+        backgroundImage: `url(${FooterBackgroundImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
+      <Footer />
     </div>
- 
+  </div>
 )
 export const Head = () => <Seo title="Home" />
 

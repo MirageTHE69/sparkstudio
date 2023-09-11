@@ -2,7 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
 .my-custom-font {
   font-family: "elza-trail", sans;
   /* You can specify other font properties here, like font-size, font-weight, etc. */
+}
+
+.my-custom-background {
+  background-image: url('../images/star.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional - Makes the background image fixed */
+  /* Other background properties can be set here */
 }
