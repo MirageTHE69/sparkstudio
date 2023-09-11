@@ -11,7 +11,7 @@ import FooterBackgroundImage from "../images/footerBackground.png"
 function Footer() {
   return (
     <div>
-      <div className="text-white w-full p-8  ">
+      <div className="text-white h-full w-full p-8   ">
         <div>
           <footer class=" text-white pt-12 pb-8 px-4">
             <div>

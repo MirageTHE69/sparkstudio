@@ -18,7 +18,16 @@ import Footer from "../components/footer"
 import FooterBackgroundImage from "../images/footerBackground.png"
 
 const IndexPage = () => (
-  <div className="min-h-min  bg-black my-custom-background">
+  <div
+    className="min-h-min  bg-black my-custom-background border-background z-50"
+    style={{
+      backgroundImage: `url(${Star})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundAttachment: "fixed",
+      
+    }}
+  >
     <Navbar />
     <div className=" mb-10 ">
       <div className="bg-cover   p-4 md:p-10 lg:p-20  pt-28 lg:pt-32 text-white flex flex-col justify-center space-y-4 md:space-y-10 px-4 md:px-10 lg:px-20">
@@ -47,7 +56,7 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <div className="  mt-64">
+      <div className="  mt-64 relative">
         <AboutUs />
       </div>
       <div>
@@ -59,7 +68,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div
-      className=" h-full w-full  "
+      className=" bg-black getInTouchContainer"
       style={{
         backgroundImage: `url(${FooterBackgroundImage})`,
         backgroundSize: "cover",

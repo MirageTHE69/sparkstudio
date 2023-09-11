@@ -6,7 +6,7 @@ import logoImg from "../images/logo.png"
 
 function Navbar() {
   return (
-    <nav className="fixed w-full flex justify-between h-20 pt-5  items-center  backdrop-filter backdrop-blur-lg  bg-black bg-opacity-80 z-50 shadow-2xl ">
+    <nav className="fixed w-full flex justify-between h-20 pt-5  items-center  backdrop-filter backdrop-blur-lg  bg-black bg-opacity-0 z-50 shadow-2xl ">
       <div className="container mx-auto flex items-center">
         <div>
           <img src={logoImg} alt="LOGO" className="h-24 w-24 object-contain" />

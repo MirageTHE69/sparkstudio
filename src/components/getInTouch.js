@@ -9,7 +9,7 @@ import Star from "../images/star.png"
 
 function GetInTouch() {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       <div className="w-full bg-black p-10 text-white">
         <span className="text-3xl">Get In Touch</span>
         <div className="flex flex-col-reverse lg:flex-row gap-6">
@@ -44,7 +44,7 @@ function GetInTouch() {
               placeholder="-- Enter your message"
             ></input>
 
-            <button className="w-full h-14 bg-gradient-to-r from-purple-700 via-purple-500 to-purple-600 rounded-2xl backdrop-blur-2xl">
+            <button className="w-full h-14  mt-12 bg-gradient-to-r from-purple-700 via-purple-500 to-purple-600 rounded-2xl backdrop-blur-2xl">
               submit
             </button>
           </div>

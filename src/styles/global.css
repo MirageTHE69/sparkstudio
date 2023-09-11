@@ -2,12 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
 .my-custom-font {
   font-family: "elza-trail", sans;
   /* You can specify other font properties here, like font-size, font-weight, etc. */
 }
 
+/* global.css */
 /* global.css */
 
 .my-custom-background {
@@ -22,22 +22,35 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.08;
 }
 
 .my-custom-background::before {
-  background-image: url('../images/star.png');
+  background-image: url("../images/vector.png"); /* Replace with the path to your second image */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.8;
+  opacity: 0.05;
+  /* Place the star background behind everything */
+  
   /* Adjust other background properties as needed */
 }
 
 .my-custom-background::after {
-  background-image: url('../images/vector.png'); /* Replace with the path to your second image */
+  
+  position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* Place the vector background behind everything except the star background */
+ 
   /* Adjust other background properties as needed */
 }
+
+/* getInTouch.module.css */
+.getInTouchContainer {
+  /* Your component-specific styles go here */
+  /* For example: */
+  background-color: black;
+  color: white;
+}
+
