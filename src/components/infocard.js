@@ -9,7 +9,7 @@ import Star from "../images/star.png"
 
 function InfoCard() {
   return (
-    <div className="  text-white text-2xl  font-semibold bg-purple-400 w-full p-8   rotate-3 ">
+    <div className="  text-white text-base md:text-2xl  font-semibold bg-purple-400 w-full md:p-8 p-3   rotate-3 ">
       <div className=" animate-marquee flex flex-row justify-between   ">
         <span>App Development</span>
 
