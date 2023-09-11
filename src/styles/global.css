@@ -8,10 +8,36 @@
   /* You can specify other font properties here, like font-size, font-weight, etc. */
 }
 
+/* global.css */
+
 .my-custom-background {
+  position: relative; /* Make the container relative for absolute positioning of pseudo-elements */
+}
+
+.my-custom-background::before,
+.my-custom-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+}
+
+.my-custom-background::before {
   background-image: url('../images/star.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional - Makes the background image fixed */
-  /* Other background properties can be set here */
+  background-attachment: fixed;
+  opacity: 0.8;
+  /* Adjust other background properties as needed */
+}
+
+.my-custom-background::after {
+  background-image: url('../images/vector.png'); /* Replace with the path to your second image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Adjust other background properties as needed */
 }
