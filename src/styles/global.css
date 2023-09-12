@@ -2,9 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.my-custom-font {
-  font-family: "elza-trail", sans;
-  /* You can specify other font properties here, like font-size, font-weight, etc. */
+/* getInTouch.module.css */
+
+.custom-heading {
+  font-family: "ElzaTrial", sans-serif; /* Use 'sans-serif' as a fallback font */
+  /* Other styles for your heading */
 }
 
 /* global.css */
@@ -31,18 +33,17 @@
   background-attachment: fixed;
   opacity: 0.05;
   /* Place the star background behind everything */
-  
+
   /* Adjust other background properties as needed */
 }
 
 .my-custom-background::after {
-  
   position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* Place the vector background behind everything except the star background */
- 
+
   /* Adjust other background properties as needed */
 }
 
@@ -53,4 +54,3 @@
   background-color: black;
   color: white;
 }
-

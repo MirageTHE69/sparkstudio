@@ -11,10 +11,6 @@ module.exports = {
   theme: {
     extend: {
 
-      fontFamily: {
-        'elza-trail': ['Elza Trail', 'sans'],
-        // You can add more font families here if needed
-      },
 
       animation: {
         marquee: "marquee 25s linear infinite",

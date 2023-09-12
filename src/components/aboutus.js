@@ -2,12 +2,12 @@ import * as React from "react"
 
 function AboutUs() {
   return (
-    <div className="   text-white">
+    <div className="   text-white custom-heading">
       <div className="w-full  p-10">
         <h1 className="w-full  ml-11 text-4xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
           About us
         </h1>
-        <div className="w-full p-10  font-semibold text-xl ">
+        <div className="w-full p-10 text-xl custom-heading ">
           Step into our dynamic digital realm, where code speaks and pixels
           dream. With more computer hours than family dinners, we wear our
           coding prowess with pride. Armed with algorithm mastery and pixel

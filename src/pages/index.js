@@ -19,7 +19,7 @@ import FooterBackgroundImage from "../images/footerBackground.png"
 
 const IndexPage = () => (
   <div
-    className="min-h-min  bg-black my-custom-background border-background z-50"
+    className="min-h-min  bg-black my-custom-background custom-heading border-background z-50"
     style={{
       backgroundImage: `url(${Star})`,
       backgroundSize: "cover",
