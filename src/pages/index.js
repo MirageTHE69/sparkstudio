@@ -16,6 +16,7 @@ import WebServiceSection from "../components/services/webservices"
 import GetInTouch from "../components/getInTouch"
 import Footer from "../components/footer"
 import FooterBackgroundImage from "../images/footerBackground.png"
+import TestimonialSection from "../components/testimonial"
 
 const IndexPage = () => (
   <div
@@ -25,11 +26,10 @@ const IndexPage = () => (
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundAttachment: "fixed",
-      
     }}
   >
     <Navbar />
-    <div className=" mb-10 ">
+    <div className="  ">
       <div className="bg-cover   p-4 md:p-10 lg:p-20  pt-28 lg:pt-32 text-white flex flex-col justify-center space-y-4 md:space-y-10 px-4 md:px-10 lg:px-20">
         <div className="space-y-2 md:space-y-4">
           <h1 className="w-full md:w-[50%] text-4xl md:text-7xl capitalize">
@@ -66,17 +66,25 @@ const IndexPage = () => (
       <div>
         <GetInTouch />
       </div>
-    </div>
-    <div
-      className=" bg-black getInTouchContainer"
-      style={{
-        backgroundImage: `url(${FooterBackgroundImage})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    >
-      <Footer />
+      <div className=" w-screen h-auto bg-black flex justify-center text-2xl pt-10 pb-10">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
+          Testimonial
+        </span>
+      </div>
+      <div>
+        <TestimonialSection />
+      </div>
+      <div
+        className=" bg-black getInTouchContainer"
+        style={{
+          backgroundImage: `url(${FooterBackgroundImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        <Footer />
+      </div>
     </div>
   </div>
 )
