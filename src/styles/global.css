@@ -3,6 +3,17 @@
 @import "tailwindcss/utilities";
 
 /* getInTouch.module.css */
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust as needed for the desired initial position */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .custom-heading {
   font-family: "ElzaTrial", sans-serif; /* Use 'sans-serif' as a fallback font */

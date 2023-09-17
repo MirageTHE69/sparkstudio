@@ -17,10 +17,11 @@ import GetInTouch from "../components/getInTouch"
 import Footer from "../components/footer"
 import FooterBackgroundImage from "../images/footerBackground.png"
 import TestimonialSection from "../components/testimonial"
+import FadeInOnScroll from "../components/FadeInOnScroll"
 
 const IndexPage = () => (
   <div
-    className="min-h-min  bg-black my-custom-background custom-heading border-background z-50"
+    className="min-h-min  bg-black my-custom-background custom-heading border-background z-50  overflow-x-hidden"
     style={{
       backgroundImage: `url(${Star})`,
       backgroundSize: "cover",
@@ -47,33 +48,46 @@ const IndexPage = () => (
         </button>
       </div>
 
-      <div className=" h-full  mt-24 relative   bg-transparent ">
-        <div className="absolute inset-0 flex items-center justify-center ">
-          <InfoCard />
+      <FadeInOnScroll>
+        <div className=" h-full  mt-24 relative   bg-transparent ">
+          <div className="absolute inset-0 flex items-center justify-center ">
+            <InfoCard />
+          </div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <InfoCard2 />
+          </div>
         </div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <InfoCard2 />
+      </FadeInOnScroll>
+
+      <FadeInOnScroll>
+        <div className="  mt-64 relative">
+          <AboutUs />
         </div>
-      </div>
+      </FadeInOnScroll>
 
-      <div className="  mt-64 relative">
-        <AboutUs />
-      </div>
-      <div>
-        <WebServiceSection />
-      </div>
+      <FadeInOnScroll>
+        <div>
+          <WebServiceSection />
+        </div>
+      </FadeInOnScroll>
 
-      <div>
-        <GetInTouch />
-      </div>
+      <FadeInOnScroll>
+        <div>
+          <GetInTouch />
+        </div>
+      </FadeInOnScroll>
+
       <div className=" w-screen h-auto bg-black flex justify-center text-2xl pt-10 pb-10">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
           Testimonial
         </span>
       </div>
-      <div>
-        <TestimonialSection />
-      </div>
+
+      <FadeInOnScroll>
+        <div>
+          <TestimonialSection />
+        </div>
+      </FadeInOnScroll>
       <div
         className=" bg-black getInTouchContainer"
         style={{
