@@ -5,7 +5,9 @@
 /* getInTouch.module.css */
 .fade-in-element {
   opacity: 0;
-  transform: translateY(20px); /* Adjust as needed for the desired initial position */
+  transform: translateY(
+    20px
+  ); /* Adjust as needed for the desired initial position */
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
@@ -13,7 +15,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .custom-heading {
   font-family: "ElzaTrial", sans-serif; /* Use 'sans-serif' as a fallback font */
@@ -64,4 +65,30 @@
   /* For example: */
   background-color: black;
   color: white;
+}
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes animate-pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite,
+    animate-pulse-slow 4s ease-in-out infinite;
 }

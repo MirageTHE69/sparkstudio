@@ -1,0 +1,24 @@
+/* src/styles/custom.css */
+
+/* Flashlight cursor styles */
+.flashlight {
+  position: absolute;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  background-color: rgba(255, 255, 255, 1); /* Flashlight background color */
+  border-radius: 50%; /* Make it round */
+  pointer-events: none; /* Allow interactions through the flashlight */
+  mix-blend-mode: overlay; /* Blend mode for flashlight effect */
+}
+
+/* Define a pulsing animation */
+@keyframes pulse {
+  0% {
+    transform: scale(2);
+    opacity: 100;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

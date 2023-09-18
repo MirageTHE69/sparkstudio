@@ -1,4 +1,7 @@
 import * as React from "react"
+import TeamOjne from ".././images/Team1.png"
+import TeamTwo from ".././images/Team2.png"
+import TeamThree from ".././images/Team3.png"
 
 function AboutUs() {
   return (
@@ -24,11 +27,7 @@ function AboutUs() {
       <div className="grid grid-cols-1 bg-black md:grid-cols-3 gap-6  p-10">
         <div className=" rounded-xl border border-neutral-800 bg-gradient-to-b from-neutral-950 to-neutral-950 backdrop-blur-2xl">
           <div className="p-10">
-            <img
-              className=" rounded-md"
-              src="https://via.placeholder.com/352x386"
-              alt="Card Image 1"
-            />
+            <img className=" rounded-md" src={TeamOjne} alt="Card Image 1" />
             <div className="flex flex-col mt-3">
               <span className="text-white-700 text-xl font-semibold">
                 -- Mirage Thakore
@@ -40,11 +39,7 @@ function AboutUs() {
 
         <div className=" rounded-xl border border-neutral-800 bg-gradient-to-b from-neutral-950 to-neutral-950 backdrop-blur-2xl">
           <div className="p-10">
-            <img
-              className=" rounded-md"
-              src="https://via.placeholder.com/352x386"
-              alt="Card Image 2"
-            />
+            <img className=" rounded-md" src={TeamTwo} alt="Card Image 2" />
             <div className="flex flex-col mt-3">
               <span className="text-white-700 text-xl font-semibold">
                 -- Another Name
@@ -56,11 +51,7 @@ function AboutUs() {
 
         <div className=" rounded-xl border border-neutral-800 bg-gradient-to-b from-neutral-950 to-neutral-950 backdrop-blur-2xl">
           <div className="p-10">
-            <img
-              className=" rounded-md"
-              src="https://via.placeholder.com/352x386"
-              alt="Card Image 3"
-            />
+            <img className=" rounded-md" src={TeamThree} alt="Card Image 3" />
             <div className="flex flex-col mt-3">
               <span className="text-white-700 text-xl font-semibold">
                 -- Third Name

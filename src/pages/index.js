@@ -18,10 +18,11 @@ import Footer from "../components/footer"
 import FooterBackgroundImage from "../images/footerBackground.png"
 import TestimonialSection from "../components/testimonial"
 import FadeInOnScroll from "../components/FadeInOnScroll"
+import FlashlightCursor from "../components/FlashlightCursor"
 
 const IndexPage = () => (
   <div
-    className="min-h-min  bg-black my-custom-background custom-heading border-background z-50  overflow-x-hidden"
+    className="min-h-min  bg-black my-custom-background custom-heading border-background z-50  overflow-x-hidden  "
     style={{
       backgroundImage: `url(${Star})`,
       backgroundSize: "cover",
@@ -29,12 +30,18 @@ const IndexPage = () => (
       backgroundAttachment: "fixed",
     }}
   >
+    <FlashlightCursor />
     <Navbar />
     <div className="  ">
-      <div className="bg-cover   p-4 md:p-10 lg:p-20  pt-28 lg:pt-32 text-white flex flex-col justify-center space-y-4 md:space-y-10 px-4 md:px-10 lg:px-20">
+      <div
+        className="bg-cover   p-4 md:p-10 lg:p-20  pt-28 lg:pt-32 text-white flex flex-col justify-center space-y-4 md:space-y-10 px-4 md:px-10 lg:px-20"
+        style={{
+          cursor: "none",
+        }}
+      >
         <div className="space-y-2 md:space-y-4">
           <h1 className="w-full md:w-[50%] text-4xl md:text-7xl capitalize">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#A168FF] ">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#A168FF]  animate-pulse-slow">
               Charting the Future of Development and Design
             </span>
           </h1>
@@ -65,6 +72,18 @@ const IndexPage = () => (
         </div>
       </FadeInOnScroll>
 
+      <div className=" w-screen h-auto bg-black flex justify-center text-2xl pt-10 pb-10">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
+          Testimonial
+        </span>
+      </div>
+
+      <FadeInOnScroll>
+        <div>
+          <TestimonialSection />
+        </div>
+      </FadeInOnScroll>
+
       <FadeInOnScroll>
         <div>
           <WebServiceSection />
@@ -77,17 +96,6 @@ const IndexPage = () => (
         </div>
       </FadeInOnScroll>
 
-      <div className=" w-screen h-auto bg-black flex justify-center text-2xl pt-10 pb-10">
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
-          Testimonial
-        </span>
-      </div>
-
-      <FadeInOnScroll>
-        <div>
-          <TestimonialSection />
-        </div>
-      </FadeInOnScroll>
       <div
         className=" bg-black getInTouchContainer"
         style={{
