@@ -41,7 +41,7 @@ const IndexPage = () => (
       >
         <div className="space-y-2 md:space-y-4">
           <h1 className="w-full md:w-[50%] text-4xl md:text-7xl capitalize">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#A168FF]  animate-pulse-slow">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#A168FF]  ">
               Charting the Future of Development and Design
             </span>
           </h1>
@@ -72,7 +72,7 @@ const IndexPage = () => (
         </div>
       </FadeInOnScroll>
 
-      <div className=" w-screen h-auto bg-black flex justify-center text-2xl pt-10 pb-10">
+      <div className=" w-screen h-auto bg-transperant flex justify-center text-4xl pt-10 pb-10">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
           Testimonial
         </span>

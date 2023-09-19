@@ -24,7 +24,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 bg-black md:grid-cols-3 gap-6  p-10">
+      <div className="grid grid-cols-1 bg-transparent  md:grid-cols-3 gap-6  p-10">
         <div className=" rounded-xl border border-neutral-800 bg-gradient-to-b from-neutral-950 to-neutral-950 backdrop-blur-2xl">
           <div className="p-10">
             <img className=" rounded-md" src={TeamOjne} alt="Card Image 1" />

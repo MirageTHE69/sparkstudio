@@ -5,8 +5,8 @@ import Image3 from "../../images/3.png"
 
 function WebServiceSection() {
   return (
-    <div className=" bg-black  text-white">
-      <div className="w-full bg-black p-10">
+    <div className=" bg-transparent   text-white">
+      <div className="w-full bg-transparent p-10">
         <h1 className="w-full  ml-10 text-4xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#A168FF]">
           Services
         </h1>
